@@ -76,22 +76,4 @@ public class TestSeatstoHold {
 		assertEquals(1200, remainingSeatsAvailable);
 
 	}
-	
-	@Test
-	public void seatstoHoldAnyLevel() {
-		TicketService service = new TicketServiceImpl();
-		Integer min = null,max = null;
-		SeatHold s = service.findAndHoldSeats(450, Optional.ofNullable(min), Optional.ofNullable(max),
-				"balcony22@yyy.com");
-		assertNotNull("SeatHold object is null", s);
-		assertNotNull("seatHoldID is null", s.getSeatHoldId());
-		assertNotNull("seata are null", s.getSeats());
-		assertNotNull("purchase price is null", s.getPurchasePrice());
-		assertNotNull("LevelID is null", s.getLevelID());
-		assertNotNull("email is null", s.getEmail());
-
-		int remainingSeatsAvailable = service.numSeatsAvailable(Optional.ofNullable(1));
-		assertEquals(700, remainingSeatsAvailable);
-
-	}
 }
