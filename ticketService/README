@@ -1,0 +1,49 @@
+**********************************
+*
+*
+*  Name : Nidhyahasan
+*  Submission Date: 03/25/2016
+*
+*
+**********************************
+*
+*
+***********************************************************
+*
+*	Pre-requisites: Make sure JAVA_HOME is pointed to JAVA8
+*
+************************************************************
+*
+*
+**********************************
+	To Build the Project
+**********************************
+
+*  In command prompt, using cd command reach till the project folder location
+*
+*  Enter the below command
+
+		mvn clean install
+
+* the jar ticketService-1.0.jar would get created in target directory
+*
+**********************************
+	To run the Project
+**********************************
+*
+*  Enter the below command
+
+		java -cp target/ticketService-1.0.jar walmart.Service.App
+
+*********************************************************************************************************
+*
+*
+*********************
+To run the Tests
+*********************
+*
+*  Enter the below command
+
+		mvn test
+
+************************************************************************************************************
